@@ -1,0 +1,6 @@
+FROM nginx
+MAITAINER eragamreddy@gmail.com
+RUN yum update -y
+COPY webapp.jar /webapps/
+EXPOSE 8081
+CMD ["start.sh","run",","]
