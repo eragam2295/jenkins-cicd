@@ -6,12 +6,9 @@ terraform {
     }
   }
 }
-provider "aws" {
-  region     = "us-east-2"
-  access_key = "AKIA2DQEUI54ZOW5M2XA"
-  secret_key = "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"
-}
-resource "aws_instance" "ter_instance1" {
+
+
+resource "aws_instance" "ter_admin" {
   ami           = "ami-01e36b7901e884a10"
   instance_type = "t2.micro"
 count = "1"
