@@ -8,7 +8,7 @@ terraform {
 }
 
 
-resource "aws_instance" "ter_admin" {
+resource "aws_instance" "ter_admiin" {
   ami           = "ami-01e36b7901e884a10"
   instance_type = "t2.micro"
 count = "1"
