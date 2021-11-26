@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Cloning our Git') { 
             steps { 
-                git 'https://github.com/rajkumar2289/maven-archetype-webapp.git' 
+                git 'https://github.com/eragam2295/jenkins-cicd.git' 
             }
         } 
         stage('list Git') { 
