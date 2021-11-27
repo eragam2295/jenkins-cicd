@@ -8,10 +8,6 @@ terraform {
 }
 
 
-resource "aws_instance" "admin" {
-  ami           = "ami-01e36b7901e884a10"
-  instance_type = "t2.micro"
-  tags = {
-    Name = "admin"
-  }
+resource "aws_s3_bucket" "b" {
+  bucket = "bu2295"
 }
