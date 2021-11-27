@@ -18,7 +18,7 @@ pipeline {
     stages {
         stage('Build Started') {
             steps {
-                echo "Runningop${env.BUILD_ID} on ${env.JENKINS_URL}"
+                echo "Runningopop${env.BUILD_ID} on ${env.JENKINS_URL}"
             }
         }
         stage('Cloning our Git') { 
