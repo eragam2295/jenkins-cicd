@@ -1,6 +1,3 @@
-FROM tomcat
-CMD["catalina.sh","run"]
-run
-copy
-chmod
-12
+FROM tomcat:8
+# take the war and copy to webapp of tomcat
+COPY target/*.war /usr/local/tomcat/webapps/
